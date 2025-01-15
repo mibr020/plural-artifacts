@@ -35,7 +35,7 @@ tempo-distributed:
     image:
       registry: dkr.plural.sh
       repository: tempo/grafana/tempo
-      tag: 2.4.1
+      tag: 2.5.0
   distributor:
     resources:
       requests:
@@ -56,7 +56,7 @@ tempo-distributed:
       image:
         registry: dkr.plural.sh
         repository: tempo/grafana/tempo-query
-        tag: 2.4.1
+        tag: 2.5.0
     resources:
       requests:
         cpu: 100m
@@ -91,7 +91,7 @@ tempo-distributed:
     image:
       registry: dkr.plural.sh
       repository: tempo/nginxinc/nginx-unprivileged
-      tag: 1.19-alpine
+      tag: 1.27-alpine
     resources: {}
   metaMonitoring:
     serviceMonitor:
@@ -101,12 +101,12 @@ tempo-distributed:
     image:
       registry: dkr.plural.sh
       repository: tempo/library/memcached
-      tag: 1.6.23-alpine
+      tag: 1.6.29-alpine
     resources: {}
   memcachedExporter:
     enabled: true
     image:
       registry: dkr.plural.sh
       repository: tempo/prom/memcached-exporter
-      tag: v0.11.2
+      tag: v0.14.4
     resources: {}
