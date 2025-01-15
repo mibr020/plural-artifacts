@@ -91,7 +91,7 @@ tempo-distributed:
     image:
       registry: dkr.plural.sh
       repository: tempo/nginxinc/nginx-unprivileged
-      tag: 1.27-alpine
+      tag: 1.19-alpine
     resources: {}
   metaMonitoring:
     serviceMonitor:
